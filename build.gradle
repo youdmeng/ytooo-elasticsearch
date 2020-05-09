@@ -1,0 +1,69 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.ytooo'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '12'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+/* Maven Central respoitory */
+repositories {
+    mavenCentral()
+}
+/* Maven JCenter respoitory */
+repositories {
+    jcenter()
+}
+/* Maven local respoitory */
+/* 本地仓库是之前下载的依赖，缓存在本地磁盘*/
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.projectlombok:lombok'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    // https://mvnrepository.com/artifact/io.swagger/swagger-annotations
+    implementation 'io.swagger:swagger-annotations:1.5.22'
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+    // https://mvnrepository.com/artifact/net.sf.dozer/dozer
+    implementation 'net.sf.dozer:dozer:5.5.1'
+
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+    implementation 'org.apache.httpcomponents:httpcore:4.3.2'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+    implementation 'org.elasticsearch:elasticsearch:6.8.1'
+    // https://mvnrepository.com/artifact/io.searchbox/jest
+    implementation 'io.searchbox:jest:6.3.1'
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation 'org.apache.logging.log4j:log4j-core:2.12.0'
+    // https://mvnrepository.com/artifact/com.github.dozermapper/dozer-core
+    implementation 'com.github.dozermapper:dozer-core:6.5.0'
+   // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation 'org.jsoup:jsoup:1.12.1'
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.58'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.9'
+// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.11'
+
+
+
+}

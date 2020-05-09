@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+
+    <!--全损信息日期转换-->
+    <mapping>
+        <class-a>com.adc.da.scan.entity.vo.TotalLossVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.TotalLossEO</class-b>
+        <field>
+            <a date-format="yyyy-MM-dd">accidentTime</a>
+            <b>accidentTime</b>
+        </field>
+        <field>
+            <a date-format="yyyy-MM-dd">initialRegistrationData</a>
+            <b>initialRegistrationData</b>
+        </field>
+    </mapping>
+    <!--审核记录-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.AuditRecordVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.AuditRecordEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.AssessInfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.AssessInfoEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.OrderBaseinfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.OrderBaseinfoEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--三者车-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.ThirdCarInfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.ThirdCarInfoEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--访问记录-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.VisitInfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.VisitInfoEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+        <field>
+            <a>operateTime</a>
+            <b>operateTime</b>
+        </field>
+    </mapping>
+
+    <!--修理厂记录-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.GarageInfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.GarageInfoEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--案件信息-->
+    <!--<mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.CaseInfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.CaseInfoEO</class-b>
+        <field>
+            <a>dangerTime</a>
+            <b>dangerTime</b>
+        </field>
+        <field>
+            <a >reportingTime</a>
+            <b>reportingTime</b>
+        </field>
+    </mapping>-->
+
+    <!--定损金额汇总-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.AssessSumMoneyVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.AssessSumMoneyEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--定损单碰撞信息-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.OrderCollisionVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.OrderCollisionEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--定损已选配件-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.VecSelectedPartsVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.VecSelectedPartsEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--定损已选工时-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.SelectedTimeVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.SelectedTimeEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <!--已选专修配件-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss">
+        <class-a>com.adc.da.scan.entity.vo.VecMajorPartsVO</class-a>
+        <class-b>com.adc.da.scan.entity.eo.VecMajorPartsEO</class-b>
+        <field>
+            <a>createTime</a>
+            <b>createTime</b>
+        </field>
+        <field>
+            <a>updateTime</a>
+            <b>updateTime</b>
+        </field>
+    </mapping>
+
+    <mapping>
+    <class-a>com.adc.da.entity.former.vo.WorkhourMajorPriceEntity</class-a>
+    <class-b>com.adc.da.entity.former.eo.WorkhourMajorPriceEO</class-b>
+    <field custom-converter="com.adc.da.bizmanual.rest.DoubleToStringConverter">
+        <a>price</a>
+        <b>price</b>
+    </field>
+    <field custom-converter="com.adc.da.bizmanual.rest.DoubleToStringConverter">
+        <a>total</a>
+        <b>total</b>
+    </field>
+    <field custom-converter="com.adc.da.bizmanual.rest.DoubleToStringConverter">
+        <a>coefficient</a>
+        <b>coefficient</b>
+    </field>
+    </mapping>
+
+
+
+
+    <!--&lt;!&ndash;定损单基础信息&ndash;&gt;
+    <mapping date-format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX">
+        <class-a>com.adc.da.scan.vo.OrderBaseinfoVO</class-a>
+        <class-b>com.adc.da.scan.entity.OrderBaseinfoEO</class-b>
+        <field>
+            <a>productTime</a>
+            <b>productTime</b>
+        </field>
+    </mapping>-->
+</mappings>
