@@ -42,7 +42,11 @@ public class EsJestClient {
      */
     public static synchronized JestClient getClient() {
         if (client == null) {
-            build();
+            synchronized (EsJestClient.class) {
+                if (client == null) {
+                    build();
+                }
+            }
         }
         return client;
     }

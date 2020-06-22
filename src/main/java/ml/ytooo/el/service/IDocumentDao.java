@@ -94,10 +94,6 @@ public interface IDocumentDao<T> {
      */
     List<String> search(List<Criteria> criterias, String index, String type);
 
-//    /**
-//     * 条件删除
-//     */
-//    int deleteByQuery(List<Criteria> criterias, String index, String type);
 
     /**
      * 清楚滚动ID
